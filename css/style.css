@@ -1,0 +1,87 @@
+  /* Create an accessible color palette using var()function */
+  /* https://www.w3schools.com/css/css3_variables.asp */
+  :root{
+    --yellow: #FFEC72;
+    --green: #CAFF73;
+    --sand: #FFF8C8;
+  }
+
+
+  .skip{
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    color: #00274C;
+    padding: 10px;
+    z-index: 100;
+    text-decoration: none;
+  }
+
+  .skip:focus{
+    top: 50px;
+  }
+
+
+  form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: 3px solid var(--yellow);
+    border-radius: 16px;
+    width:70%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: black;
+    background: var(--sand);
+    font-family: "Sofia", sans-serif;
+  }
+
+  .radio {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* background: #575294; */
+    color: var(--black);
+  }
+
+  #name {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background: white;
+    color: white;
+  }
+
+  #message {
+    width: 100%;
+    padding: 10px;
+    resize: vertical;
+  }
+
+  input,
+  textarea {
+    padding: 10px;
+    border: 2px solid black;
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    grid-column: 1/-1;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  button{
+    grid-column: 1/-1;
+  }
+
+
